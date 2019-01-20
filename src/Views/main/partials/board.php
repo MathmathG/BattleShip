@@ -7,8 +7,8 @@
             <div class="column bs-case">
               <div class="bs-case__none"></div>
             </div>
-
-            <?php for ($ascii=65; $ascii <=74; $ascii++):?>
+             <!-- parcourt de la table ASCII -->
+            <?php for ($ascii=65; $ascii < 65 + $boardWidth; $ascii++):?>
             <div class="column bs-case">
               <div class="bs-case__title"><?php echo chr($ascii) ?></div>
             </div>
@@ -16,12 +16,12 @@
           </div>
 
 
-          <?php for ($ligne = 0; $ligne <=9; $ligne++):?>
+          <?php for ($ligne = 0; $ligne < $boardHeight; $ligne++):?>
           <div class="columns is-gapless is-mobile bs-cases">
             <div class="column bs-case">
               <div class="bs-case__title"><?php echo $ligne + 1 ?></div>
             </div>
-            <?php for ($col=0; $col <=9; $col++):?>
+            <?php for ($col=0; $col < $boardWidth; $col++):?>
             <div class="column bs-case">
               <div></div>
           </div>

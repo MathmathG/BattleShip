@@ -30,20 +30,20 @@
   <section class="section">
     <div class="container">
       <div class="columns">
-          
+          <!-- VOS TIRS -->
         <?php $this->insert('main/partials/board', [
-            'title' => 'Vos tirs'
+            'title' => 'Vos tirs',
+            'boardWidth' => $boardWidth,
+            'boardHeight' => $boardHeight
 
         ]);?>
          <!-- VOS VAISSEAUX -->
          <?php $this->insert('main/partials/board',[
-             'title' => 'Vos vaisseaux'
-
+             'title' => 'Vos vaisseaux',
+             'boardWidth' => $boardWidth,
+            'boardHeight' => $boardHeight
          ]);?>
 
-        
-
-       
         </div>
         </div>
         </div>
